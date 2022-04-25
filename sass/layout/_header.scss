@@ -1,3 +1,45 @@
+.site-nav {
+  display: none;
+}
+.mail__top{
+  display: none;
+}
+.tel__top{
+  display: none;
+}
+.top-line-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-line{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.logo-top{
+  font-family: Raleway,serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  
+  color: var(--top-logo-color);
+  }
+  
+  .accent {
+    color: var(--accent-color);
+  }
+
+  .mobile-menu-btn{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu-btn__icon{
+    fill: var(--top-logo-color);
+  }
+
 // .top-line-container {
 //   display: flex;
 //   align-items: center;
