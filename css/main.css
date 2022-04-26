@@ -95,7 +95,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -436,6 +436,12 @@ p {
     color: var(--title-text-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .mobile-nav__link:active {
+    color: var(--accent-color);
+  }
+  .mobile-nav__link:hover, .mobile-nav__link:focus {
+    color: var(--accent-color);
+  }
   .current {
     color: var(--accent-color);
   }
@@ -514,9 +520,9 @@ p {
     margin-left: 0;
     margin-right: 0;
   }
-  .top-line-container {
+  .top-line-tablet-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
   }
   .top-line {
@@ -530,7 +536,7 @@ p {
     margin-right: 88px;
     font-family: Raleway, serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--top-logo-color);
@@ -541,6 +547,7 @@ p {
   .site-nav {
     display: flex;
     align-items: center;
+    padding-right: 84px;
   }
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
@@ -577,20 +584,17 @@ p {
     border-radius: 2px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts-top-line {
-    margin-left: auto;
-    align-items: center;
-    cursor: pointer;
-  }
   .mail__top {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
+    margin-right: auto;
     color: var(--primary-text-color);
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 14;
+    font-size: 12px;
+    line-height: 1, 17;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -598,9 +602,25 @@ p {
   .mail__top:hover, .mail__top:focus {
     color: var(--accent-color);
   }
+  .tel__top {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1, 17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tel__top:hover, .tel__top:focus {
+    color: var(--accent-color);
+  }
   .mail__icon {
     display: flex;
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
 }
