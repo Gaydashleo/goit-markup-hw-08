@@ -36,11 +36,17 @@
     background-color: transparent;
     padding: 0;
     line-height: 0;
-   
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
+      
   .mobile-menu-btn__icon{
-    fill: var(--top-logo-color);
-  }
+    fill: var(--top-logo-color); 
+    }
+
   .mobile-menu {
     position: absolute;
     top: 0;
@@ -64,8 +70,12 @@
     right: 15px;
     border: none;
     background-color: transparent;
-    // padding-top: 10px;
     line-height: 0;
+     
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
   }
 
   .mobile-menu__container{
