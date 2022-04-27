@@ -1,17 +1,17 @@
+// M O B I L E and T A B L E T
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  // height: 609px;
 
   background-color: var(--modal-background-color);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close__btn {
   position: absolute;
   top: 8px;
@@ -45,10 +45,81 @@
   font-family: Roboto;
   font-style: Bold;
   font-size: 20px;
-  line-height: 1, 15;
-  line-height: 100%;
+  line-height: 128%;
   letter-spacing: 3%;
 
   color: #212121;
   margin-bottom: 12px;
 }
+
+// D  E  S  K  T  O  P
+@media screen and (min-width:1200px) {
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--modal-background-color);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   padding: 40px;
+
+//   width: 528px;
+//   height: 581px;
+
+//   background-color: var(--modal-background-color);
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .modal-close__btn {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   background-color: transparent;
+//   padding: 0px;
+//   cursor: pointer;
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//   border-color: var(--accent-color);
+//   fill: var(--accent-color);
+// }
+// }
+
+// .modal-close__icon:hover,
+// .modal-close__icon:focus {
+//   fill: var(--accent-color);
+// }
+
+// .modal-title {
+//   display: block;
+//   font-family: Roboto;
+//   font-style: Bold;
+//   font-size: 20px;
+//   line-height: 1, 15;
+//   line-height: 100%;
+//   letter-spacing: 3%;
+
+//   color: #212121;
+//   margin-bottom: 12px;
+// }
