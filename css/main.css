@@ -829,39 +829,10 @@ p {
   }
 }
 
-.card-feature__description {
-  display: none;
-}
-
-.feature-mobile-container {
-  margin-top: 60px;
-}
-
-.card-feature__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  border-radius: 4px;
-}
-
-.card-feature__title {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-}
-
-.card-feature__description-mobile {
-  font-size: 14px;
-  line-height: 1.71;
+@media screen and (min-width: 768px) {
+  .card-feature__img {
+    display: none;
+  }
 }
 
 .job {
