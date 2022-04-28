@@ -832,6 +832,11 @@ p {
   display: none;
 }
 
+.feature-mobile-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .card-feature__img {
   display: flex;
   justify-content: center;
@@ -859,6 +864,93 @@ p {
   width: 100%;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 1199px) {
+  .feature-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-feature__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+  }
+  .card-feature__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 354px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  .card-feature__description-mobile {
+    width: 354px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .feature-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+  .feature-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .feature-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .card-feature__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 270px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  .card-feature__description {
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+  }
+  .card-feature__description:not(:last-child) {
+    margin-right: 30px;
+  }
+  .card-feature__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+  }
 }
 
 .job {
