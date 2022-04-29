@@ -526,14 +526,16 @@ p {
   }
 }
 
-.section {
-  padding-top: 94px;
+.filters-container {
+  margin-bottom: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 .filters {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .button-all:active {
@@ -550,7 +552,7 @@ p {
 
 .btn-list {
   margin-right: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .btn-list:hover, .btn-list:focus {
@@ -568,9 +570,18 @@ button {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
   background-color: var(--portfolio-button-bg-color);
   color: var(--title-text-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .portfolio {
