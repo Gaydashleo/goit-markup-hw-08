@@ -223,8 +223,10 @@
   .footer-social-list{
     display: inline-block;
     margin-left: 165px;
-
-    
+  }
+  .footer-twin{
+    display: flex;
+    align-items: baseline;
   }
 }
 
