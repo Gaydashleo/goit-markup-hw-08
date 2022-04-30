@@ -50,6 +50,7 @@
 .project-thumb {
   position: relative;
   overflow: hidden;
+  width: 450px;
 
   &:hover .project-card-feature__description {
   opacity: 1;

@@ -633,6 +633,7 @@ button {
 .project-thumb {
   position: relative;
   overflow: hidden;
+  width: 450px;
 }
 
 .project-thumb:hover .project-card-feature__description {
@@ -863,7 +864,7 @@ button {
     display: inline-block;
     margin-left: 165px;
   }
-  .footer-twin {
+  .footer-alignment {
     display: flex;
     align-items: baseline;
   }
