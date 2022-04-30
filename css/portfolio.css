@@ -730,6 +730,13 @@ button {
   color: var(--accent-color);
 }
 
+.social-list {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-social-list__icon {
   fill: var(--footer-social-list__icon-color);
 }
