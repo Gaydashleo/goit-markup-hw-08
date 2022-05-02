@@ -533,6 +533,7 @@ p {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 2;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -547,7 +548,6 @@ p {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
-    z-index: 500;
   }
   .mobile-nav__link {
     padding-left: 40px;
