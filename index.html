@@ -322,14 +322,27 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__img">
-              <img class="team-members__img"
-                srcset="../images/image-team/team-productdesigner-img.jpg 1x, ../images/image-team/team-productdesigner-img@2x.jpg 2x "
+              <picture>
+                <source 
+                srcset="../images/image-team/team-desktop-productdesigner-img.jpg 1x, ../images/image-team/team-desktop-productdesigner-img@2x.jpg 2x " 
+                media="(min-width:1200px)"
+                />
+                <source 
+                srcset="../images/image-team/team-tablet-productdesigner-img.jpg 1x, ../images/image-team/team-tablet-productdesigner-img@2x.jpg 2x " 
+                media="(min-width:768px)"
+                />
+                <source 
+                srcset="../images/image-team/team-mobile-productdesigner-img.jpg 1x, ../images/image-team/team-mobile-productdesigner-img@2x.jpg 2x " 
+                media="(max-width:767px)"
+                />
+                <img class="team-members__img"
                 src="../images/image-team/team-productdesigner-img.jpg"
                 width="270"
                 height="260"
                 alt="Дизайнер" 
               />
-              <div class="card-team">
+                </picture>
+                <div class="card-team">
                 <h3 class="card-team__title">Игорь Демьяненко</h3>
                 <p class="card-team__title-under">Product Designer</p>
                 <ul class="social-list list">
