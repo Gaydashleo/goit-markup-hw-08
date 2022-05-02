@@ -335,7 +335,7 @@ p {
 }
 
 .contact-form__checkbox-lable {
-  display: inline-flex;
+  display: flex;
   justify-content: start;
   font-family: Roboto;
   font-style: Regular;
@@ -380,7 +380,6 @@ p {
 .contact-form__submit-btn {
   min-width: 200px;
   margin-top: 30px;
-  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
@@ -548,6 +547,7 @@ p {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
+    z-index: 500;
   }
   .mobile-nav__link {
     padding-left: 40px;
@@ -937,6 +937,7 @@ p {
   width: 100%;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1114,7 +1115,6 @@ p {
     box-shadow: 0px 4px 4px var(--shadow-team);
   }
   .card-team__title {
-    padding-top: 30px;
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -1130,6 +1130,7 @@ p {
     color: var(--primary-text-color);
   }
   .card-team {
+    padding-top: 30px;
     padding-bottom: 24px;
     background-color: var(--card-team-bg);
     box-shadow: 0px 4px 4px var(--shadow-team);
@@ -1418,6 +1419,7 @@ p {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
     width: 450px;
     height: 50px;
     background-color: var(--section-bg-dark);
@@ -1600,6 +1602,7 @@ p {
     display: block;
     align-items: center;
     margin-top: 20px;
+    padding-left: 16px;
     width: 358px;
     height: 50px;
     background-color: var(--section-bg-dark);

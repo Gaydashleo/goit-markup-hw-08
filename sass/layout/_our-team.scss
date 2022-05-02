@@ -21,7 +21,7 @@
     box-shadow: 0px 4px 4px var(--shadow-team)
   }
   .card-team__title {
-    padding-top: 30px;
+    
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -40,6 +40,7 @@
     color: var(--primary-text-color);
   }
   .card-team {
+    padding-top: 30px;
     padding-bottom: 24px;
     background-color: var(--card-team-bg);
     box-shadow: 0px 4px 4px var(--shadow-team);

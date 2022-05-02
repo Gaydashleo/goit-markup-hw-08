@@ -3,7 +3,7 @@
     display: flex;
   }
   .contact-form__checkbox-lable {
-  display: inline-flex;
+  display: flex;
   justify-content: start;
   font-family: Roboto;
   font-style: Regular;
@@ -46,7 +46,7 @@
 .contact-form__submit-btn {
   min-width: 200px;
   margin-top: 30px;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
