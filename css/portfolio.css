@@ -206,6 +206,7 @@ p {
     left: 0;
     width: 100%;
     height: 100vh;
+    overflow: auto;
     background-color: var(--primary-bg-color);
     opacity: 0;
     visibility: hidden;
@@ -228,12 +229,11 @@ p {
     padding: 0;
   }
   .mobile-menu__container {
-    position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .mobile-nav__link {
-    padding-left: 40px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.14;
@@ -254,14 +254,11 @@ p {
   .mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-nav__item:last-child {
-    margin-bottom: 302px;
+  .mobile-nav {
+    display: block;
   }
   .mobile-contact {
     padding-bottom: 64px;
-  }
-  .mobile-contact__menu {
-    padding-left: 40px;
   }
   .mobile-contact__tel {
     padding-bottom: 32px;
@@ -318,6 +315,9 @@ p {
     margin-left: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotation 90°;
+  }
+  .mobile-contact__menu {
+    display: block;
   }
 }
 
@@ -533,12 +533,6 @@ p {
   }
 }
 
-.filters-container {
-  margin-bottom: 40px;
-  margin-top: 60px;
-  flex-wrap: wrap;
-}
-
 .filters {
   display: flex;
   align-items: center;
@@ -559,7 +553,6 @@ p {
 
 .btn-list {
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .btn-list:hover, .btn-list:focus {
@@ -583,11 +576,39 @@ button {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .filters-container {
+    margin-bottom: 30px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
   .filters {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-container {
+    margin-top: 94px;
+    flex-wrap: wrap;
+  }
+  .filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -673,7 +694,7 @@ button {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
   }
   .project-thumb__img {
     width: 354px;
@@ -700,10 +721,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .project {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin-bottom: 94px;
   }
   .project-thumb__img {
     width: 370px;
@@ -938,7 +956,7 @@ button {
   .basement-logo {
     width: 145px;
     height: 31px;
-    margin-left: 76px;
+    margin-left: 0;
     font-family: Raleway;
     font-weight: b700;
     font-size: 26px;
@@ -949,6 +967,7 @@ button {
   .basement-address {
     margin-top: 20px;
     margin-bottom: 0;
+    margin-left: 0;
     text-align: start;
     font-family: Roboto;
     font-style: normal;

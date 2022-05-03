@@ -53,11 +53,7 @@
   &:focus {
     background-color: var(--accent-color);
   }
-  // .footer-social-list {
-  //   display: block;
-  //   align-items: center;
-  //   margin-bottom: 60px;
-  // }
+  
 }
 
 .social-list__item:not(:last-child) {
@@ -245,7 +241,7 @@
 .basement-logo {
 width: 145px;
 height: 31px;
-margin-left: 76px;
+margin-left: 0;
 font-family: Raleway;
 font-weight: b700;
 font-size: 26px;
@@ -257,6 +253,7 @@ color: var(--footer-logo-color);
 .basement-address {
   margin-top: 20px;
   margin-bottom: 0;
+  margin-left: 0;
   text-align: start;
   font-family: Roboto;
   font-style: normal;
