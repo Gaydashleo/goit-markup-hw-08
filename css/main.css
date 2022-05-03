@@ -1000,7 +1000,7 @@ p {
   .card-feature__title {
     margin-top: 30px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
     width: 354px;
     font-style: normal;
     font-weight: 700;
