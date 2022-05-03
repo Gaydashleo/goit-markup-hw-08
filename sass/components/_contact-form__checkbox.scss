@@ -4,13 +4,12 @@
   }
   .contact-form__checkbox-lable {
   display: flex;
-  
-  justify-content: start;
+  // justify-content: start;
   font-family: Roboto;
   font-style: Regular;
   font-size: 12px;
-  line-height: 1, 17;
-  line-height: 146%;
+  line-height: 1, 16;
+  line-height: 100%;
   letter-spacing: 3%;
 
   color: var(--primary-text-color);
@@ -41,7 +40,10 @@
 }
 
 .check-conditions {
+  display: inline;
+  
   color: var(--accent-color);
+  // flex-shrink: 0;
 }
 
 .contact-form__submit-btn {
