@@ -331,8 +331,8 @@ p {
     display: none;
   }
   .container {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .top-line-tablet-container {
     display: flex;
