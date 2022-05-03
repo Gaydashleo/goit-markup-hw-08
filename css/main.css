@@ -523,7 +523,6 @@ p {
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     background-color: var(--primary-bg-color);
     opacity: 0;
     visibility: hidden;
@@ -576,13 +575,15 @@ p {
     margin-bottom: 302px;
   }
   .mobile-contact {
-    padding-bottom: 32px;
+    padding-bottom: 64px;
+  }
+  .mobile-contact__menu {
+    padding-left: 40px;
   }
   .mobile-contact__tel {
     padding-bottom: 32px;
   }
   .mobile-contact__tel-top {
-    padding-left: 40px;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -598,7 +599,6 @@ p {
     color: var(--accent-color);
   }
   .mobile-contact__mail-top {
-    padding-left: 40px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -617,8 +617,6 @@ p {
     display: flex;
     position: relative;
     align-items: center;
-    padding-top: 32px;
-    padding-left: 40px;
   }
   .mobile-social-list__link {
     font-weight: 500;
