@@ -159,8 +159,8 @@ p {
   font-family: Roboto;
   font-style: Bold;
   font-size: 20px;
-  line-height: 1, 15;
-  line-height: 100%;
+  line-height: 1, 5;
+  line-height: 128%;
   letter-spacing: 3%;
   color: #212121;
   margin-bottom: 12px;
