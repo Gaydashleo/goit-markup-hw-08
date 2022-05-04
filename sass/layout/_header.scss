@@ -75,7 +75,6 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      // overflow: auto;
       background-color: var(--primary-bg-color);
       opacity: 0;
       visibility: hidden;
@@ -109,9 +108,7 @@
       padding-top: 48px;
       padding-bottom: 48px;
       padding-left: 40px;
-      
-      
-    }
+          }
     
     .mobile-nav__link {
       font-weight: 500;
@@ -148,7 +145,6 @@
     .mobile-contact {
       padding-bottom: 64px;
     }
-    
     
     .mobile-contact__tel {
       padding-bottom: 32px;
@@ -198,8 +194,7 @@
       display: flex;
       position: relative;
       align-items: center;
-      // padding-left: 40px;
-    }
+          }
     .mobile-social-list__link {
       font-weight: 500;
       font-size: 18px;
@@ -233,8 +228,6 @@
       }
       .mobile-contact__menu{
         display: block;
-        
-
       }
       }
   
