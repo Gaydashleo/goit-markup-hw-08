@@ -518,6 +518,7 @@ p {
     fill: var(--top-logo-color);
   }
   .mobile-menu {
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -549,6 +550,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
   }
   .mobile-nav__link {
     font-weight: 500;
